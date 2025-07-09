@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+.main_box{
+    background-image: url(photo.jpg);
+    height: 100vh;
+    /* here v stands for viewport which means the full paage
+    of website visible to us and h stands for height */
+    background-size: cover;
+}
+.btn_one{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    position: absolute;
+    left: 10px;
+    line-height: 55px;
+    cursor:pointer;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    line-height: 60px;
+
+}
+.sidebar_menu .logo a{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 50px;
+    text-decoration: none;
+    font-weight: 600;
+}
+ .sidebar_menu .btn_two{
+    position: absolute;
+    font-size: 25px;
+    left: 275px;
+
+    line-height: 60px;
+    /* opacity: 0; */
+}
+.sidebar_menu .menu{
+    position: absolute;
+    color: white;
+    top: 80px;
+    width: 100%;
+}
+.sidebar_menu .menu li{
+    margin-top:6px;
+    padding: 10px 20px;
+}
+.sidebar_menu .menu li i,a{
+    color: white;
+    font-size: 20px;
+    
+    text-decoration: none;
+}
+.sidebar_menu .menu li i{
+    padding-right: 10px;
+}
+.sidebar_menu .social_media{
+    /* font-size: 20px; */
+    left: 25%;
+    position: absolute;
+    bottom: 50px;
+}
+.social_media i{
+    color: white;
+    opacity: 0.5;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+}
+.btn_two i:hover{
+    font-size: 30px;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    
+}
+ .btn_one i:hover{
+    transition: all 0.3s linear;
+    font-size: 40px;
+}
+#check:checked ~.sidebar_menu{
+    left: 0px;
+}
+#check:checked ~.btn_one i {
+    opacity: 0;
+}
